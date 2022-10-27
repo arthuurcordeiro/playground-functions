@@ -51,12 +51,17 @@ function highestCount(ahei) {
   return contador
 }
 
-highestCount([9, 3, 4, 13])
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
-
+// Desafio 7 - Crie uma função de Caça ao Rato
+// Implemente a função catAndMouse que verifica qual gato está mais perto do rato
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs (cat1 - mouse) < Math.abs (cat2 - mouse)) {
+    return 'cat1'
+  } else if (Math.abs (cat1 - mouse) > Math.abs (cat2 - mouse)) {
+    return 'cat2'
+  } else {
+  return 'os gatos trombam e o rato foge'
+    }
+  }
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
