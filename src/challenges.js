@@ -21,9 +21,10 @@ function splitSentence(frase) {
   return frase.split(' ')  
 }
 
-// Desafio 4
-function concatName() {
-  // seu código aqui
+// Desafio 4 - Crie uma função que use concatenação de strings
+// Implemente a função concatName que recebe um array de strings e retorna uma string com o último e o primeiro item
+function concatName(arrei) {
+  return arrei[arrei.length -1] + ", " + arrei[0]  
 }
 
 // Desafio 5
