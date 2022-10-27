@@ -104,9 +104,20 @@ function decode(numeros) {
     return numeros
 }
 
-// Desafio 10
-function techList() {
-  // seu código aqui
+// Desafio 10 - Crie uma função de Lista de Tecnologias
+// Implemente a função techList que recebe um array e uma string e retorna um array de objetos.
+function techList(tecnologias, nome) {
+  if (tecnologias.length == 0) {
+    return 'Vazio!';
+  }
+  tecnologias.sort();
+  let list = []
+  for (let index = 0; index < tecnologias.length; index ++) {
+    list.push({
+      tech: tecnologias[index],
+      name: nome,
+    })
+  } return list
 }
 
 module.exports = {
