@@ -62,9 +62,27 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge'
     }
   }
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+
+// Desafio 8 - Crie uma função FizzBuzz
+// Implemente a função fizzBuzz que recebe um array de números e retorna um array de string de acordo com o resultado
+function fizzBuzz(ahey) {
+  let resultado = []
+  for (let index = 0; index < ahey.length; index ++) {
+    if (ahey[index] % 3 === 0 && ahey[index] % 5 === 0) {
+      ahey[index] = 'fizzBuzz';
+    }
+    else if (ahey[index] % 3 === 0) {
+      ahey[index] = 'fizz';
+    }
+    else if (ahey[index] % 5 === 0) {
+      ahey[index] = 'buzz';
+    } 
+    else {
+      ahey[index] = 'bug!'
+    }
+    
+  } return ahey
 }
 
 // Desafio 9
