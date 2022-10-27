@@ -85,12 +85,23 @@ function fizzBuzz(ahey) {
   } return ahey
 }
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+// Desafio 9 - Crie uma função que Codifique e Decodifique
+// Implemente uma função que codifica e decodifica uma frase, trocando vogais por números ou números por vogais.
+function encode(vogais) {
+    vogais = vogais.replace(/a/g, 1)
+    vogais = vogais.replace(/e/g, 2)
+    vogais = vogais.replace(/i/g, 3)
+    vogais = vogais.replace(/o/g, 4)
+    vogais = vogais.replace(/u/g, 5)
+    return vogais
 }
-function decode() {
-  // seu código aqui
+function decode(numeros) {
+    numeros = numeros.replace(/1/g, 'a')
+    numeros = numeros.replace(/2/g, 'e')
+    numeros = numeros.replace(/3/g, 'i')
+    numeros = numeros.replace(/4/g, 'o')
+    numeros = numeros.replace(/5/g, 'u')
+    return numeros
 }
 
 // Desafio 10
