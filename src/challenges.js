@@ -8,9 +8,11 @@ function compareTrue(tigre, lobo) {
     }
   }
 
-// Desafio 2
-function calcArea() {
-  // seu código aqui
+// Desafio 2 - rie uma função que calcula a área de um triângulo
+// Implemente a função calcArea que retorna o cálculo da área total de um triângulo
+function calcArea(base, height) {
+  let area = (base * height) / 2
+  return area
 }
 
 // Desafio 3
