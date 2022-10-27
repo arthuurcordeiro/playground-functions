@@ -27,9 +27,10 @@ function concatName(arrei) {
   return arrei[arrei.length -1] + ", " + arrei[0]  
 }
 
-// Desafio 5
-function footballPoints() {
-  // seu código aqui
+// Desafio 5 - Crie uma função que calcula a quantidade de pontos em um campeonato de futebol
+// Implemente a função footballPoints que calcula a pontuação de um time de futebol em um campeonato a partir do número de vitórias e empates
+function footballPoints(vitorias, empates) {
+  return vitorias * 3 + empates
 }
 
 // Desafio 6
