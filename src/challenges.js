@@ -15,9 +15,10 @@ function calcArea(base, height) {
   return area
 }
 
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
+// Desafio 3 - Crie uma função que divida uma frase
+// Implemente a função splitSentence que divide uma frase de acordo com a quantidade de palavras
+function splitSentence(frase) {
+  return frase.split(' ')  
 }
 
 // Desafio 4
