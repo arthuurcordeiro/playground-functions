@@ -1,7 +1,12 @@
-// Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
+// Desafio 1 - rie uma função usando o operador &&
+// Implemente a função compareTrue utilizando somente o operador &&
+function compareTrue(tigre, lobo) {
+    if (tigre == true && lobo == true){
+      return true;
+    } else {
+      return false
+    }
+  }
 
 // Desafio 2
 function calcArea() {
