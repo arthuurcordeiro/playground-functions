@@ -11,8 +11,8 @@ function compareTrue(tigre, lobo) {
 // Desafio 2 - rie uma função que calcula a área de um triângulo
 // Implemente a função calcArea que retorna o cálculo da área total de um triângulo
 function calcArea(base, height) {
-  let area = (base * height) / 2;
-  return area;
+  let areaTriangulo = (base * height) / 2;
+  return areaTriangulo;
 }
 
 // Desafio 3 - Crie uma função que divida uma frase
@@ -36,72 +36,68 @@ function footballPoints(vitorias, empates) {
 // Desafio 6 - Crie uma função que calcula o número de repetições do maior número
 // Implemente a função highestCount que deverá retornar a quantidade de vezes que o maior número se repete ao receber um array de números.
 function highestCount(ahei) {
-  let maiorNum = -99
+  let maiorNum = -99;
   for (let index = 0; index < ahei.length; index++) {
     if (ahei[index] > maiorNum) {
-      maiorNum = ahei[index]
+      maiorNum = ahei[index];
     }
   }
-  let contador = 0
-  for (let i = 0; i < ahei.length; i ++) {
+  let contador = 0;
+  for (let i = 0; i < ahei.length; i++) {
     if (ahei[i] == maiorNum) {
-      contador ++
+      contador++;
     }
   }
-  return contador
+  return contador;
 }
 
 // Desafio 7 - Crie uma função de Caça ao Rato
 // Implemente a função catAndMouse que verifica qual gato está mais perto do rato
 function catAndMouse(mouse, cat1, cat2) {
-  if (Math.abs (cat1 - mouse) < Math.abs (cat2 - mouse)) {
-    return 'cat1'
-  } else if (Math.abs (cat1 - mouse) > Math.abs (cat2 - mouse)) {
-    return 'cat2'
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1';
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    return 'cat2';
   } else {
-  return 'os gatos trombam e o rato foge'
-    }
+    return 'os gatos trombam e o rato foge';
   }
-
+}
 
 // Desafio 8 - Crie uma função FizzBuzz
 // Implemente a função fizzBuzz que recebe um array de números e retorna um array de string de acordo com o resultado
 function fizzBuzz(ahey) {
-  let resultado = []
-  for (let index = 0; index < ahey.length; index ++) {
+  let resultado = [];
+  for (let index = 0; index < ahey.length; index++) {
     if (ahey[index] % 3 === 0 && ahey[index] % 5 === 0) {
       ahey[index] = 'fizzBuzz';
-    }
-    else if (ahey[index] % 3 === 0) {
+    } else if (ahey[index] % 3 === 0) {
       ahey[index] = 'fizz';
-    }
-    else if (ahey[index] % 5 === 0) {
+    } else if (ahey[index] % 5 === 0) {
       ahey[index] = 'buzz';
-    } 
-    else {
-      ahey[index] = 'bug!'
+    } else {
+      ahey[index] = 'bug!';
     }
-    
-  } return ahey
+  }
+  return ahey;
 }
 
 // Desafio 9 - Crie uma função que Codifique e Decodifique
 // Implemente uma função que codifica e decodifica uma frase, trocando vogais por números ou números por vogais.
 function encode(vogais) {
-    vogais = vogais.replace(/a/g, 1)
-    vogais = vogais.replace(/e/g, 2)
-    vogais = vogais.replace(/i/g, 3)
-    vogais = vogais.replace(/o/g, 4)
-    vogais = vogais.replace(/u/g, 5)
-    return vogais
+  vogais = vogais.replace(/a/g, 1);
+  vogais = vogais.replace(/e/g, 2);
+  vogais = vogais.replace(/i/g, 3);
+  vogais = vogais.replace(/o/g, 4);
+  vogais = vogais.replace(/u/g, 5);
+  return vogais;
 }
 function decode(numeros) {
-    numeros = numeros.replace(/1/g, 'a')
-    numeros = numeros.replace(/2/g, 'e')
-    numeros = numeros.replace(/3/g, 'i')
-    numeros = numeros.replace(/4/g, 'o')
-    numeros = numeros.replace(/5/g, 'u')
-    return numeros
+  numeros = numeros.replace(/1/g, 'a');
+  numeros = numeros.replace(/2/g, 'e');
+  numeros = numeros.replace(/3/g, 'i');
+  numeros = numeros.replace(/4/g, 'o');
+  numeros = numeros.replace(/5/g, 'u');
+  return numeros;
 }
 
 // Desafio 10 - Crie uma função de Lista de Tecnologias
@@ -111,13 +107,14 @@ function techList(tecnologias, nome) {
     return 'Vazio!';
   }
   tecnologias.sort();
-  let list = []
-  for (let index = 0; index < tecnologias.length; index ++) {
+  let list = [];
+  for (let index = 0; index < tecnologias.length; index++) {
     list.push({
       tech: tecnologias[index],
       name: nome,
-    })
-  } return list
+    });
+  }
+  return list;
 }
 
 module.exports = {
